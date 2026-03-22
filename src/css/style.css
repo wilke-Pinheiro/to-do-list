@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --color-bg1: #4f3164;
+    --color-bg2: #8321c9;
+    --coolor-card: #453252;
+    --color-icon: #6b9ae1;
+    --color-text: #e9e4e4;
+    --coor-date: #a3a1a1;;
+}
+
+html,
+body {
+    min-height: 100dvh;
+    background: linear-gradient(var(--color-bg1), var(--color-bg2));
+}
+
+.hero {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+}
+
+.toDo-form {
+    border-bottom: 2px solid var(--coolor-card);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.toDo-input {
+    line-height: 2rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--color-icon);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    line-height: 2rem;
+    max-width: 100px;
+    width: 100%;
+    color: #fff;
+    font-weight: 900;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.tasks {
+    width: 100%;
+    padding: 1rem;
+}
+
+.toDo-list{
+    text-align: center;
+}
+
+.toDo-list-title {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.toDo-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--coolor-card);
+    padding: .5rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: .85rem;
+}
+
+.box-btn {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.btn-trash {
+    border: none;
+    padding: .35rem;
+    color: var(--color-text);
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+
+.btn-trash {
+    background-color: var(--color-icon);
+}
+
+
+.btn-trash:hover {
+    filter: brightness(.8);
+    transform: scale(0.93);
+}
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+
+    .toDo-input {
+        max-width: 500px;
+    }
+
+    .tasks {
+        max-width: 475px;
+    }
+
+}
